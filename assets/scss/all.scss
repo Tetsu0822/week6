@@ -1,0 +1,21 @@
+// Functions first
+@import 'bootstrap/scss/functions';
+@import '../scss/stylesheets/helper/variables';
+
+// Variable overrides second
+
+
+@import './base/base';
+@import 'stylesheets/conponents/custom_toggler';
+
+// Required Bootstrap imports
+@import 'bootstrap/scss/bootstrap';
+@import './stylesheets/helper/utilities';
+@import 'bootstrap/scss/utilities/api';
+
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
+@import './pages/index.scss';
+@import './pages/user.scss';

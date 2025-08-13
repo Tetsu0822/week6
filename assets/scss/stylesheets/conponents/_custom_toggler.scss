@@ -1,0 +1,57 @@
+// 客製化漢堡動畫（和之前提供的相同，略作整理）
+.navbar-toggler-icon {
+    background-image: none;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+
+    div {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $natural-10;
+        // border-radius: 2px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $natural-10;
+        // border-radius: 2px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        top: 20px;
+    }
+}
+
+// 當 navbar 展開時動畫變叉叉
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    &::before {
+        transform: rotate(45deg);
+        top: 10px;
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+        top: 10px;
+    }
+
+    div {
+        opacity: 0;
+    }
+}
