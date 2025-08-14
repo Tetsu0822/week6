@@ -13,10 +13,10 @@
   <title> 個人資料 - 職旅 | Workway </title>
   <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-  <script type="module" crossorigin src="/week6/assets/main-BQD8rGaB.js"></script>
+  <script type="module" crossorigin src="/week6/assets/main-Di99Qk6D.js"></script>
   <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-  <link rel="stylesheet" crossorigin href="/week6/assets/main-BFQbXSyG.css">
+  <link rel="stylesheet" crossorigin href="/week6/assets/main-DUO7YoIR.css">
 </head>
 
 <body>
@@ -38,11 +38,11 @@
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content w-100">
-                    <div class="modal-header">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
                         <button type="button" class="btn-close me-3" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body d-flex flex-column">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
                             <li class="nav-item py-4 mb-6 py-lg-0 mb-lg-0">
                                 <a class="nav-link" href="#">服務方案</a>
@@ -54,8 +54,8 @@
                                 <a class="nav-link" href="#">聯絡我們</a>
                             </li>
                         </ul>
-                        <div class="d-block d-lg-none mt-4 mb-6 mx-6">
-                            <button type="button" class="btn btn-secondary w-100">登入 / 註冊</button>
+                        <div class="mt-auto">
+                            <button type="button" class="btn btn-secondary fw-bold py-2 w-100">登入 / 註冊</button>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                 tabindex="0">
                 <div class="row gap-7 mb-9">
     <div class="col-12 col-lg-3">
-        <h2 class="h3">個人資料</h2>
+        <h2 class="fs-7 fs-lg-4">個人資料</h2>
     </div>
     <div class="col-12 col-lg">
         <div class="mb-6 text-nowrap">
@@ -126,7 +126,8 @@
             <label for="upload-avatar" class="form-label border rounded-2 py-3 px-5">
                 <span class="material-symbols-outlined align-bottom">
                     upload
-                </span>更新頭貼</label>
+                </span>
+                <span class="fs-8 fs-lg-6">更新頭貼</span></label>
             <input class="form-control d-none" type="file" id="upload-avatar">
         </div>
         <!-- 姓名 -->
@@ -135,7 +136,7 @@
             <label for="username">姓名</label>
         </div>
         <!-- 性別 -->
-        <p class="mb-2">性別</p>
+        <p class="fs-8 fs-lg-6 mb-2">性別</p>
         <div class="mb-6">
             <div class="form-check form-check-inline">
                 <input class="form-check-input" name="sex" type="radio" id="sex1" value="女性" checked>
@@ -152,14 +153,14 @@
         </div>
         <!-- 生日 -->
         <div class="form-floating mb-6">
-            <input type="text" class="form-control" id="birthday" value="2000/01/10">
+            <input type="date" class="form-control" id="birthday" value="2000/01/10">
             <label for="birthday">生日</label>
         </div>
         <!-- 密碼 -->
         <div class="mb-6">
-            <p class="mb-2">密碼</p>
+            <p class="fs-8 fs-lg-6 mb-2">密碼</p>
             <!-- Button trigger modal -->
-            <button type="button" class="btn rounded-3 bg-natural-0 border pe-3" data-bs-toggle="modal"
+            <button type="button" class="btn rounded-3 bg-natural-0 fs-8 fs-lg-6 border pe-3" data-bs-toggle="modal"
                 data-bs-target="#exampleModal">
                 修改密碼
                 <span class="material-symbols-outlined align-bottom">
@@ -170,7 +171,7 @@
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog change-pwd">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">更新密碼</h5>
@@ -203,7 +204,7 @@
         <div class="form-floating mb-6">
             <input type="email" class="form-control" id="mailbox" placeholder="email">
             <label for="mailbox">信箱</label>
-            <div id="emailHelp" class="form-text ms-2">盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</div>
+            <div id="emailHelp" class="form-text text-natural-50 ms-2">盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</div>
         </div>
         <!-- 聯絡電話 -->
         <div class="form-floating mb-6">
@@ -218,12 +219,12 @@
     </div>
 </div>
 <div class="d-grid gap-2 d-lg-block d-lg-flex justify-content-lg-center">
-    <button type="button" class="btn rounded-4 bg-natural-0 border me-0 me-lg-5 pe-3 mb-4 mb-lg-0">重新填寫
+    <button type="button" class="btn rounded-4 bg-natural-0 border fs-8 fs-lg-6 me-0 me-lg-5 pe-3 mb-4 mb-lg-0">重新填寫
         <span class="material-symbols-outlined align-bottom">
             chevron_right
         </span>
     </button>
-    <button type="button" class="btn rounded-4 btn-dark pe-3">儲存更新
+    <button type="button" class="btn rounded-4 btn-dark fs-8 fs-lg-6 pe-3">儲存更新
         <span class="material-symbols-outlined align-bottom">
             chevron_right
         </span>
@@ -232,31 +233,31 @@
               </div>
               <div class="tab-pane fade" id="pills-record" role="tabpanel" aria-labelledby="pills-record-tab"
                 tabindex="0">
-                              <h2 class="mb-6">預約紀錄</h2>
+                              <h2 class="fs-7 fs-lg-4 mb-6">預約紀錄</h2>
               <div class="row text-center gap-4 mb-5">
-                <div class="col w-100 py-6 border rounded-3 d-none d-md-block">
-                  <h3 class="text-primary mb-2">3</h3>
+                <div class="col w-100 py-4 py-lg-6 border rounded-3 d-none d-md-block">
+                  <h3 class="fs-3 fs-lg-2 text-primary mb-2">3</h3>
                   <p class="fs-5 text-natural-50">已完成諮詢</p>
                 </div>
-                <div class="col w-100 py-6 border rounded-3">
-                  <h3 class="text-primary mb-2">2025/10/10</h3>
+                <div class="col w-100 py-4 py-lg-6 border rounded-3">
+                  <h3 class="fs-3 fs-lg-2 text-primary mb-2">2025/10/10</h3>
                   <p class="fs-5 text-natural-50">即將到來</p>
                 </div>
-                <div class="col w-100 py-6 border rounded-3 d-none d-md-block">
-                  <h3 class="text-primary mb-2">3/6</h3>
+                <div class="col w-100 py-4 py-lg-6 border rounded-3 d-none d-md-block">
+                  <h3 class="fs-3 fs-lg-2 text-primary mb-2">3/6</h3>
                   <p class="fs-5 text-natural-50">使用方案進度</p>
                 </div>
               </div>
               <div class="d-flex justify-content-between mb-6">
                 <div class="d-flex">
-                  <button type="button" class="btn btn-dark rounded-4 me-2">全部預約</button>
-                  <button type="button" class="btn btn-light border rounded-4 me-2">已完成</button>
-                  <button type="button" class="btn btn-light border rounded-4">已取消</button>
+                  <button type="button" class="fs-8 fs-lg-6 btn btn-dark rounded-4 me-2">全部預約</button>
+                  <button type="button" class="fs-8 fs-lg-6 btn btn-light border rounded-4 me-2">已完成</button>
+                  <button type="button" class="fs-8 fs-lg-6 btn btn-light border rounded-4">已取消</button>
                 </div>
                 <div class="dropdown">
-                  <button class="btn border rounded-4" type="button" data-bs-toggle="dropdown"
+                  <button class="btn border-0 border-lg rounded-4" type="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
-                    排序
+                    <span class="d-none d-lg-inline">排序</span>
                     <span class="material-symbols-outlined align-bottom">
                       filter_list
                     </span>
