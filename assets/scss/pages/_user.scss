@@ -28,3 +28,38 @@
 .modal-fullscreen {
     width: 100vw !important;
 }
+
+.btn-list {
+    border: none;
+    @include media-breakpoint-up(lg) {
+        border: 1px solid $natural-85;
+    }
+}
+
+.record-caption {
+    color: $natural-10;
+    font-size: 14px;
+    font-weight: 1.2;
+    font-weight: $font-weight-medium;
+    padding-left: 8px;
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+}
+
+.project {
+    &-name {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 8px;
+        padding-right: 24px;
+    }
+    &-type {
+        font-size: $sm-font-size;
+        color: $natural-50;
+        line-height: 1.2;
+        padding: 3.5px 8px;
+        margin: 10px 8px;
+        border-radius: $border-radius;
+        border: 1px solid $border-color;
+    }
+}
