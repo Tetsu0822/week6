@@ -1,6 +1,6 @@
 <div class="row gap-7 mb-9">
     <div class="col-12 col-lg-3">
-        <h2 class="h3">個人資料</h2>
+        <h2 class="fs-7 fs-lg-4">個人資料</h2>
     </div>
     <div class="col-12 col-lg">
         <div class="mb-6 text-nowrap">
@@ -9,7 +9,8 @@
             <label for="upload-avatar" class="form-label border rounded-2 py-3 px-5">
                 <span class="material-symbols-outlined align-bottom">
                     upload
-                </span>更新頭貼</label>
+                </span>
+                <span class="fs-8 fs-lg-6">更新頭貼</span></label>
             <input class="form-control d-none" type="file" id="upload-avatar">
         </div>
         <!-- 姓名 -->
@@ -18,7 +19,7 @@
             <label for="username">姓名</label>
         </div>
         <!-- 性別 -->
-        <p class="mb-2">性別</p>
+        <p class="fs-8 fs-lg-6 mb-2">性別</p>
         <div class="mb-6">
             <div class="form-check form-check-inline">
                 <input class="form-check-input" name="sex" type="radio" id="sex1" value="女性" checked>
@@ -35,14 +36,14 @@
         </div>
         <!-- 生日 -->
         <div class="form-floating mb-6">
-            <input type="text" class="form-control" id="birthday" value="2000/01/10">
+            <input type="date" class="form-control" id="birthday" value="2000/01/10">
             <label for="birthday">生日</label>
         </div>
         <!-- 密碼 -->
         <div class="mb-6">
-            <p class="mb-2">密碼</p>
+            <p class="fs-8 fs-lg-6 mb-2">密碼</p>
             <!-- Button trigger modal -->
-            <button type="button" class="btn rounded-3 bg-natural-0 border pe-3" data-bs-toggle="modal"
+            <button type="button" class="btn rounded-3 bg-natural-0 fs-8 fs-lg-6 border pe-3" data-bs-toggle="modal"
                 data-bs-target="#exampleModal">
                 修改密碼
                 <span class="material-symbols-outlined align-bottom">
@@ -53,7 +54,7 @@
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog change-pwd">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">更新密碼</h5>
@@ -86,7 +87,7 @@
         <div class="form-floating mb-6">
             <input type="email" class="form-control" id="mailbox" placeholder="email">
             <label for="mailbox">信箱</label>
-            <div id="emailHelp" class="form-text ms-2">盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</div>
+            <div id="emailHelp" class="form-text text-natural-50 ms-2">盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</div>
         </div>
         <!-- 聯絡電話 -->
         <div class="form-floating mb-6">
@@ -101,12 +102,12 @@
     </div>
 </div>
 <div class="d-grid gap-2 d-lg-block d-lg-flex justify-content-lg-center">
-    <button type="button" class="btn rounded-4 bg-natural-0 border me-0 me-lg-5 pe-3 mb-4 mb-lg-0">重新填寫
+    <button type="button" class="btn rounded-4 bg-natural-0 border fs-8 fs-lg-6 me-0 me-lg-5 pe-3 mb-4 mb-lg-0">重新填寫
         <span class="material-symbols-outlined align-bottom">
             chevron_right
         </span>
     </button>
-    <button type="button" class="btn rounded-4 btn-dark pe-3">儲存更新
+    <button type="button" class="btn rounded-4 btn-dark fs-8 fs-lg-6 pe-3">儲存更新
         <span class="material-symbols-outlined align-bottom">
             chevron_right
         </span>
