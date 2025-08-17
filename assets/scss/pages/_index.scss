@@ -1,5 +1,9 @@
-// nav button i {
-//     display: inline-block;
-//     width: 24px;
-//     height: 24px;
-// }
+.login-title {
+    margin-top: -24px;
+    font-size: 28px;
+    margin-bottom: 24px;
+    @include media-breakpoint-up(lg) {
+        font-size: 32px;
+        margin-bottom: 48px;
+    }
+}

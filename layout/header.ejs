@@ -3,16 +3,88 @@
         <a class="navbar-brand" href="#">
             <img src="../assets/images/logo.svg" alt="logo" />
         </a>
-        <a class="d-block d-lg-none nav-link ms-auto me-3" href="#">
-            <img src="../assets/images/avatar.png" alt="avatar" class="avatar-image rounded-circle me-2" />
-            Mokumaru
-        </a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">
-                <div></div>
+        <div class="d-block d-lg-none ms-auto me-3">
+            <div class="d-flex py-2 px-4 px-lg-6 border rounded-2 rounded-lg-3">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#navLogin">登入</a>
+                <span>/</span>
+                <a class="nav-link" href="#">註冊</a>
+            </div>
+        </div>
+        <button class="d-block d-lg-none fs-4 py-3 px-3 bg-white border-0" type="button" data-bs-toggle="modal"
+            data-bs-target="#navMenu">
+            <i class="bi bi-list"></i>
             </span>
         </button>
+
+        <!-- Modal NavMenu -->
+        <div class="modal fade" id="navMenu" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close me-3" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex flex-column">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
+                            <li class="nav-item py-4 mb-6 py-lg-0 mb-lg-0">
+                                <a class="nav-link" href="#">服務方案</a>
+                            </li>
+                            <li class="nav-item py-4 mb-6 py-lg-0 mb-lg-0">
+                                <a class="nav-link" href="#">關於職旅</a>
+                            </li>
+                            <li class="nav-item py-4 py-lg-0">
+                                <a class="nav-link" href="#">聯絡我們</a>
+                            </li>
+                        </ul>
+                        <div class="mt-auto">
+                            <button type="button" class="btn btn-secondary fw-bold py-2 w-100">登入 / 註冊</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal NavLogin -->
+        <div class="modal fade" id="navLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="d-none d-lg-block col-lg-7">
+                                    <img src="../assets/images/about/login.png" alt="login-image">
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="text-end">
+                                        <button type="button" class="btn-close fs-8 p-14" data-bs-dismiss="modal"
+                                            aria-label="Close">
+                                        </button>
+                                        <div class="text-center">
+                                            <h2 class="login-title">登入</h2>
+                                            <div class="d-grid gap-4">
+                                                <a class="btn border text-center py-3 align-bottom" href="#">
+                                                    <img src="../assets/images/icon/google.svg"
+                                                        alt="Login with Google" />
+                                                    Google
+                                                </a>
+                                                <a class="btn border text-center py-3 align-bottom mb-6" href="#">
+                                                    <img src="../assets/images/icon/discord.svg"
+                                                        alt="Login with Discord" />
+                                                    Discord
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-center">
                 <li class="nav-item py-4 mb-6 py-lg-0 mb-lg-0">
@@ -29,9 +101,12 @@
                 <button type="button" class="btn btn-secondary w-100">登入 / 註冊</button>
             </div>
         </div>
-        <a class="d-none d-lg-block nav-link" href="#">
-            <img src="../assets/images/avatar.png" alt="avatar" class="avatar-image rounded-circle me-2" />
-            Mokumaru
-        </a>
+        <div class="d-none d-lg-block">
+            <div class="d-flex py-2 px-4 px-lg-6 border rounded-2 rounded-lg-3">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#navLogin">登入</a>
+                <span>/</span>
+                <a class="nav-link" href="#">註冊</a>
+            </div>
+        </div>
     </div>
 </nav>

@@ -25,9 +25,9 @@
     }
 }
 
-.modal-fullscreen {
-    width: 100vw !important;
-}
+// .modal-fullscreen {
+//     width: 100vw !important;
+// }
 
 .btn-list {
     border: none;
@@ -62,5 +62,12 @@
         margin: 10px 8px;
         border-radius: $border-radius;
         border: 1px solid $border-color;
+    }
+}
+
+.form-check-label, .form-control {
+    font-size: $sm-font-size;
+    @include media-breakpoint-up(lg) {
+        font-size: $font-size-base;
     }
 }
