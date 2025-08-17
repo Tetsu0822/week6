@@ -7,3 +7,19 @@
         margin-bottom: 48px;
     }
 }
+
+.lookPwd {
+    position: absolute;
+    top: 18px;
+    right: 12px;
+    color: $natural-10;
+}
+
+.losePwd, .fastSign {
+    color: $natural-50;
+}
+
+.fastSign-link {
+    color: $primary-60;
+    text-decoration: underline;
+}
