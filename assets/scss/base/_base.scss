@@ -1,5 +1,8 @@
 /* 標籤的基本樣式 */
 body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
     letter-spacing: 0.02em;
 }
 

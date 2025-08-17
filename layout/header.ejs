@@ -38,7 +38,11 @@
                             </li>
                         </ul>
                         <div class="mt-auto">
-                            <button type="button" class="btn btn-secondary fw-bold py-2 w-100">登入 / 註冊</button>
+                            <div class="d-flex py-2 px-4 px-lg-6 bg-secondary border rounded-2 rounded-lg-3 justify-content-center">
+                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#navLogin">登入</a>
+                                <span>/</span>
+                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#navSign">註冊</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -52,64 +56,63 @@
                 <div class="modal-content">
                     <div class="modal-body m-0 p-0">
                         <!-- 登入表單 Start -->
-                            <div class="row">
-                                <div class="d-none d-lg-block col-lg-7">
-                                    <img class="img-fluid rounded-start" src="../assets/images/about/login.png" alt="login-image">
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="text-end px-4 ps-lg-0 pe-lg-4">
-                                        <button type="button" class="btn-close fs-8 p-14" data-bs-dismiss="modal"
-                                            aria-label="Close">
-                                        </button>
-                                        <div class="text-center px-4 ps-lg-0 pe-lg-4">
-                                            <h2 class="login-title">登入</h2>
-                                            <div class="d-grid gap-4 border-bottom mb-6">
-                                                <a class="btn border text-center py-3 align-bottom" href="#">
-                                                    <img src="../assets/images/icon/google.svg"
-                                                        alt="Login with Google" />
-                                                    Google
-                                                </a>
-                                                <a class="btn border text-center py-3 align-bottom mb-6" href="#">
-                                                    <img src="../assets/images/icon/discord.svg"
-                                                        alt="Login with Discord" />
-                                                    Discord
+                        <div class="row">
+                            <div class="d-none d-lg-block col-lg-7">
+                                <img class="img-fluid rounded-start" src="../assets/images/about/login.png"
+                                    alt="login-image">
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="text-end px-4 ps-lg-0 pe-lg-4">
+                                    <button type="button" class="btn-close fs-8 p-14" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                    </button>
+                                    <div class="text-center px-4 ps-lg-0 pe-lg-4">
+                                        <h2 class="login-title">登入</h2>
+                                        <div class="d-grid gap-4 border-bottom mb-6">
+                                            <a class="btn border text-center py-3 align-bottom" href="#">
+                                                <img src="../assets/images/icon/google.svg" alt="Login with Google" />
+                                                Google
+                                            </a>
+                                            <a class="btn border text-center py-3 align-bottom mb-6" href="#">
+                                                <img src="../assets/images/icon/discord.svg" alt="Login with Discord" />
+                                                Discord
+                                            </a>
+                                        </div>
+
+                                        <form>
+                                            <!-- 帳號 -->
+                                            <div class="form-floating mb-4">
+                                                <input type="text" class="form-control" id="username" placeholder="帳號">
+                                                <label class="fs-8 fs-lg-6" for="username">帳號</label>
+                                            </div>
+                                            <!-- 密碼 -->
+                                            <div class="form-floating mb-4 d-flex">
+                                                <input type="password" class="form-control position-relative"
+                                                    id="loginPwd" placeholder="密碼">
+                                                <label class="fs-8 fs-lg-6" for="loginPwd">密碼</label>
+                                                <a href="javascript:void(0)" class="lookPwd toggle-password"
+                                                    data-target="loginPwd">
+                                                    <i class="bi bi-eye-slash-fill"></i>
                                                 </a>
                                             </div>
-
-                                            <form>
-                                                <!-- 帳號 -->
-                                                <div class="form-floating mb-4">
-                                                    <input type="text" class="form-control" id="username"
-                                                        placeholder="帳號">
-                                                    <label class="fs-8 fs-lg-6" for="username">帳號</label>
-                                                </div>
-                                                <!-- 密碼 -->
-                                                <div class="form-floating mb-4 d-flex">
-                                                    <input type="password" class="form-control position-relative"
-                                                        id="loginPwd" placeholder="密碼">
-                                                    <label class="fs-8 fs-lg-6" for="loginPwd">密碼</label>
-                                                    <a href="javascript:void(0)" class="lookPwd toggle-password" data-target="loginPwd">
-                                                        <i class="bi bi-eye-slash-fill"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="text-end mb-4">
-                                                    <a class="losePwd" href="#">忘記密碼</a>
-                                                </div>
-                                                <button type="button"
-                                                    class="btn rounded-4 btn-dark pe-3 w-100 mb-6 mb-lg-9">送出
-                                                    <span class="material-symbols-outlined align-bottom">
-                                                        chevron_right
-                                                    </span>
-                                                </button>
-                                                <p>
-                                                    <span class="fastSign">不是會員</span>
-                                                    <a class="fastSign-link" href="#">快速註冊</a>
-                                                </p>
-                                            </form>
-                                        </div>
+                                            <div class="text-end mb-4">
+                                                <a class="losePwd" href="#">忘記密碼</a>
+                                            </div>
+                                            <button type="button"
+                                                class="btn rounded-4 btn-dark pe-3 w-100 mb-6 mb-lg-9">送出
+                                                <span class="material-symbols-outlined align-bottom">
+                                                    chevron_right
+                                                </span>
+                                            </button>
+                                            <p>
+                                                <span class="fastSign">不是會員</span>
+                                                <a class="fastSign-link" href="#">快速註冊</a>
+                                            </p>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         <!-- 登入表單 End -->
                     </div>
                 </div>
@@ -124,82 +127,83 @@
                 <div class="modal-content">
                     <div class="modal-body m-0 p-0">
                         <!-- 註冊表單 Start -->
-                            <div class="row">
-                                <div class="d-none d-lg-block col-lg-7 order-2">
-                                    <img class="img-fluid rounded-end h-100" src="../assets/images/about/register.png" alt="register-image">
-                                </div>
-                                <div class="col-lg-5 order-1">
-                                    <div class="text-end px-4 ps-lg-4 pe-lg-0">
-                                        <button type="button" class="btn-close fs-8 p-14" data-bs-dismiss="modal"
-                                            aria-label="Close">
-                                        </button>
-                                        <div class="text-center px-4 ps-lg-4 pe-lg-0">
-                                            <h2 class="login-title">登入</h2>
-                                            <div class="d-grid gap-4 border-bottom mb-6">
-                                                <a class="btn border text-center py-3 align-bottom" href="#">
-                                                    <img src="../assets/images/icon/google.svg"
-                                                        alt="Login with Google" />
-                                                    Google
-                                                </a>
-                                                <a class="btn border text-center py-3 align-bottom mb-6" href="#">
-                                                    <img src="../assets/images/icon/discord.svg"
-                                                        alt="Login with Discord" />
-                                                    Discord
+                        <div class="row">
+                            <div class="d-none d-lg-block col-lg-7 order-2">
+                                <img class="img-fluid rounded-end h-100" src="../assets/images/about/register.png"
+                                    alt="register-image">
+                            </div>
+                            <div class="col-lg-5 order-1">
+                                <div class="text-end px-4 ps-lg-4 pe-lg-0">
+                                    <button type="button" class="btn-close fs-8 p-14" data-bs-dismiss="modal"
+                                        aria-label="Close">
+                                    </button>
+                                    <div class="text-center px-4 ps-lg-4 pe-lg-0">
+                                        <h2 class="login-title">登入</h2>
+                                        <div class="d-grid gap-4 border-bottom mb-6">
+                                            <a class="btn border text-center py-3 align-bottom" href="#">
+                                                <img src="../assets/images/icon/google.svg" alt="Login with Google" />
+                                                Google
+                                            </a>
+                                            <a class="btn border text-center py-3 align-bottom mb-6" href="#">
+                                                <img src="../assets/images/icon/discord.svg" alt="Login with Discord" />
+                                                Discord
+                                            </a>
+                                        </div>
+
+                                        <form>
+                                            <!-- 帳號 -->
+                                            <div class="form-floating mb-4">
+                                                <input type="text" class="form-control" id="username" placeholder="帳號">
+                                                <label class="fs-8 fs-lg-6" for="username">帳號</label>
+                                            </div>
+                                            <!-- 密碼 -->
+                                            <div class="form-floating mb-4 d-flex">
+                                                <input type="password" class="form-control position-relative"
+                                                    id="signPwd" placeholder="密碼">
+                                                <label class="fs-8 fs-lg-6" for="signPwd">密碼</label>
+                                                <a href="javascript:void(0)" class="lookPwd toggle-password"
+                                                    data-target="signPwd">
+                                                    <i class="bi bi-eye-slash-fill"></i>
                                                 </a>
                                             </div>
-
-                                            <form>
-                                                <!-- 帳號 -->
-                                                <div class="form-floating mb-4">
-                                                    <input type="text" class="form-control" id="username"
-                                                        placeholder="帳號">
-                                                    <label class="fs-8 fs-lg-6" for="username">帳號</label>
-                                                </div>
-                                                <!-- 密碼 -->
-                                                <div class="form-floating mb-4 d-flex">
-                                                    <input type="password" class="form-control position-relative"
-                                                        id="signPwd" placeholder="密碼">
-                                                    <label class="fs-8 fs-lg-6" for="signPwd">密碼</label>
-                                                    <a href="javascript:void(0)" class="lookPwd toggle-password" data-target="signPwd">
-                                                        <i class="bi bi-eye-slash-fill"></i>
-                                                    </a>
-                                                </div>
-                                                <!-- 密碼 2 -->
-                                                <div class="form-floating mb-4 d-flex">
-                                                    <input type="password" class="form-control position-relative"
-                                                        id="confirmPwd" placeholder="密碼">
-                                                    <label class="fs-8 fs-lg-6" for="confirmPwd">密碼</label>
-                                                    <a href="javascript:void(0)" class="lookPwd toggle-password" data-target="confirmPwd">
-                                                        <i class="bi bi-eye-slash-fill"></i>
-                                                    </a>
-                                                </div>
-                                                <!-- 密碼 3 -->
-                                                <div class="form-floating mb-4 d-flex">
-                                                    <input type="password" class="form-control position-relative"
-                                                        id="thirdPwd" placeholder="密碼">
-                                                    <label class="fs-8 fs-lg-6" for="thirdPwd">密碼</label>
-                                                    <a href="javascript:void(0)" class="lookPwd toggle-password" data-target="thirdPwd">
-                                                        <i class="bi bi-eye-slash-fill"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="text-end mb-4">
-                                                    <a class="losePwd" href="#">忘記密碼</a>
-                                                </div>
-                                                <button type="button"
-                                                    class="btn rounded-4 btn-dark pe-3 w-100 mb-6 mb-lg-9">送出
-                                                    <span class="material-symbols-outlined align-bottom">
-                                                        chevron_right
-                                                    </span>
-                                                </button>
-                                                <p>
-                                                    <span class="fastSign">不是會員</span>
-                                                    <a class="fastSign-link" href="#">快速註冊</a>
-                                                </p>
-                                            </form>
-                                        </div>
+                                            <!-- 密碼 2 -->
+                                            <div class="form-floating mb-4 d-flex">
+                                                <input type="password" class="form-control position-relative"
+                                                    id="confirmPwd" placeholder="密碼">
+                                                <label class="fs-8 fs-lg-6" for="confirmPwd">密碼</label>
+                                                <a href="javascript:void(0)" class="lookPwd toggle-password"
+                                                    data-target="confirmPwd">
+                                                    <i class="bi bi-eye-slash-fill"></i>
+                                                </a>
+                                            </div>
+                                            <!-- 密碼 3 -->
+                                            <div class="form-floating mb-4 d-flex">
+                                                <input type="password" class="form-control position-relative"
+                                                    id="thirdPwd" placeholder="密碼">
+                                                <label class="fs-8 fs-lg-6" for="thirdPwd">密碼</label>
+                                                <a href="javascript:void(0)" class="lookPwd toggle-password"
+                                                    data-target="thirdPwd">
+                                                    <i class="bi bi-eye-slash-fill"></i>
+                                                </a>
+                                            </div>
+                                            <div class="text-end mb-4">
+                                                <a class="losePwd" href="#">忘記密碼</a>
+                                            </div>
+                                            <button type="button"
+                                                class="btn rounded-4 btn-dark pe-3 w-100 mb-6 mb-lg-9">送出
+                                                <span class="material-symbols-outlined align-bottom">
+                                                    chevron_right
+                                                </span>
+                                            </button>
+                                            <p>
+                                                <span class="fastSign">不是會員</span>
+                                                <a class="fastSign-link" href="#">快速註冊</a>
+                                            </p>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         <!-- 註冊表單 End -->
                     </div>
                 </div>

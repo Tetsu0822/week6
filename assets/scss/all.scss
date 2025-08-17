@@ -6,7 +6,7 @@
 
 
 @import './base/base';
-// @import 'stylesheets/conponents/custom_toggler';
+
 
 // Required Bootstrap imports
 @import 'bootstrap/scss/bootstrap';
@@ -19,3 +19,4 @@
 
 @import './pages/index.scss';
 @import './pages/user.scss';
+@import 'stylesheets/conponents/tooltips';
