@@ -233,3 +233,70 @@
     width: 160px;
     height: 160px;
 }
+
+.qa-section {
+    background-image: url(/assets/images/index/bg-grid.png);
+    background-repeat: repeat;
+    padding: 40px 12px;
+    @include media-breakpoint-up(lg) {
+        padding: 80px 12px;
+    }
+}
+
+.accordion-button {
+    position: relative;
+    border: 1px solid transparent;
+
+    &:not(.collapsed) {
+        border: none;
+        box-shadow: none;
+    }
+}
+
+.accordion-button[aria-expanded="true"]::before {
+    content: "";
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 0;
+    height: 1px;
+    background-color: $natural-85;
+}
+
+.contact-content {
+    padding-bottom: 24px;
+    border-bottom: 1px dotted $natural-85;
+    margin-bottom: 16px;
+}
+
+.contact-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    a {
+        color: $white;
+        font-size: 18px;
+        font-weight: $font-weight-medium;
+    }
+
+    // 手機版：按鈕不滿寬
+    .btn-inline-mobile {
+        align-self: flex-start;   // 靠左（或改成 center 置中）
+        width: auto;              // 按照內容寬度
+        max-width: 100%;          // 避免超出螢幕
+    }
+
+    @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        justify-content: flex-start;
+
+        a {
+            font-size: 20px;
+        }
+
+        .btn-inline-mobile {
+            align-self: auto; // 回到 flex 預設
+        }
+    }
+}
