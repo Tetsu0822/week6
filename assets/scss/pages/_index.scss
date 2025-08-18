@@ -76,6 +76,7 @@
 
     img {
         display: block;
+        margin: 0 auto;
         width: 160px;
         height: 160px;
         object-fit: cover;
@@ -204,32 +205,28 @@
 }
 
 .container-img {
-  position: relative;
-  overflow: hidden;
-
-  // 手機版 (預設)
-  width: 228px;   // 顯示寬
-  height: 240px;  // 顯示高
-
-  img {
     position: absolute;
+    overflow: hidden;
     right: 0;
     bottom: 0;
-    width: 400px;   // 原始圖片縮小版
-    height: 400px;
-    object-fit: cover;
-  }
-
-  // 桌機版 (lg 以上)
-  @include media-breakpoint-up(lg) {
-    width: 620px;   // 顯示寬
-    height: 500px;  // 顯示高
+    transform: translate(160px,160px); // 往右下位移
+    z-index: -1; // 如果只是裝飾圖，可以放到內容後面
 
     img {
-      width: 800px;   // 桌機大圖
-      height: 800px;
+        display: block;
+        max-width: none; // 避免被父層限制寬度
+        width: 400px;  // 預設桌機尺寸
+        height: 400px;
     }
-  }
+
+    @include media-breakpoint-up(lg) {
+        transform: translate(180px, 500px);
+
+        img {
+            width: 800px;  // 預設桌機尺寸
+            height: 800px;
+        }
+    }
 }
 
 .serve-img {
